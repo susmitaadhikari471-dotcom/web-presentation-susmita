@@ -3,65 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Susmita Adhikari | Portfolio</title>
+  <title>Susmita Adhikari | Personal Space</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="logo">Susmita.Ad</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact Me</a></li>
-    </ul>
-  </nav>
+  <!-- Background Blur Orbs -->
+  <div class="blur-glow orb-1"></div>
+  <div class="blur-glow orb-2"></div>
 
-  <!-- Hero Section -->
-  <section class="hero" id="about">
-    <div class="profile-img">
-      <!-- Profile Picture -->
-      <img src="profile.jpg="Susmita Adhikari">
+  <!-- Main Container -->
+  <div class="portfolio-card">
+    
+    <!-- Profile Picture Section -->
+    <div class="avatar-wrapper">
+      <img src="profile.jpg.jpg" alt="Susmita Adhikari" class="profile-pic">
+      <div class="status-badge"><span></span> Active</div>
     </div>
-    <h1>Hi, I'm <span class="highlight">Susmita Adhikari</span> 👋</h1>
-    <p class="subtitle">Computer Engineering Student at Seoul Theological University</p>
 
-    <!-- Interactive Button & Message Area -->
-    <button id="demoBtn" type="button">Click For Demo Feature</button>
-    <p id="welcomeMsg"></p>
-  </section>
+    <!-- Intro Header -->
+    <h1 class="name">Susmita Adhikari</h1>
+    <p class="tagline">Computer Engineering Student @ STU</p>
 
-  <!-- Technical Skills Section -->
-  <section class="skills-section" id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-      
-      <div class="skill-card">
-        <h3>🌐 Web Dev</h3>
-        <p>HTML5, CSS3, Flexbox & Grid Layouts</p>
-      </div>
-
-      <div class="skill-card">
-        <h3>🐍 Python</h3>
-        <p>Data Structures, Spyder IDE, Logic Building</p>
-      </div>
-
-      <div class="skill-card">
-        <h3>🛠️ Tools</h3>
-        <p>VS Code, Git, Interactive Web Tools</p>
-      </div>
-
+    <!-- Welcome Message Box -->
+    <div class="welcome-box">
+      <p class="greeting">✨ Welcome to my creative space!</p>
+      <p class="bio">
+        Passionate about web development, building intuitive software solutions, and crafting clean user experiences.
+      </p>
     </div>
-  </section>
 
-  <!-- JavaScript Linking -->
+    <!-- Interactive Button -->
+    <div class="action-area">
+      <button id="demoBtn" type="button" class="glow-btn">
+        <span>Say Hello 👋</span>
+      </button>
+      <p id="welcomeMsg" class="dynamic-msg"></p>
+    </div>
+
+    <!-- Quick Links / Skills Pills -->
+    <div class="pills-container">
+      <span class="pill">💻 Web Dev</span>
+      <span class="pill">🐍 Python</span>
+      <span class="pill">⚙️ Engineering</span>
+    </div>
+
+  </div>
+
   <script src="script.js"></script>
-
-  <!-- Script Tag for JavaScript -->
-    <script src="script.js"></script>
-  
-</body>
-  
 </body>
 </html>
