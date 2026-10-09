@@ -142,3 +142,33 @@ body {
   color: #94a3b8;
   font-size: 0.95rem;
 }
+/* Dynamic Demo Button Styling */
+#demoBtn {
+  background-color: #38bdf8;
+  color: #0f172a;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#demoBtn:hover {
+  background-color: #0284c7;
+  color: #ffffff;
+}
+
+#demoBtn:active {
+  transform: scale(0.98);
+}
+
+/* Dynamic Welcome Message Styling */
+#welcomeMsg {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #38bdf8;
+  min-height: 24px;
+}
