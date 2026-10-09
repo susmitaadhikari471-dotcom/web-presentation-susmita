@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (btn && msg) {
     btn.addEventListener("click", function () {
       if (msg.textContent === "") {
-        msg.textContent = "🎉 Thanks for stopping by! Hope you have a great day!";
+        msg.textContent = "✨ hello everyone, Welcome to my mid week presentation!";
       } else {
         msg.textContent = "";
       }
