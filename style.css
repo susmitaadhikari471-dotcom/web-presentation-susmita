@@ -1,174 +1,192 @@
-/* Reset & Base Styles */
+/* Reset & Fonts */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 body {
-  background-color: #0f172a;
-  color: #f8fafc;
-  line-height: 1.6;
-  padding: 20px;
-}
-
-/* Navbar */
-.navbar {
+  background-color: #0b0f19;
+  color: #f1f5f9;
+  min-height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 15px 50px;
-  background-color: #1e293b;
-  border-radius: 8px;
-  margin-bottom: 40px;
-}
-
-.logo {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #38bdf8;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  color: #94a3b8;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.nav-links a:hover {
-  color: #38bdf8;
-}
-
-/* Hero Section */
-.hero {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 60px auto;
-}
-
-.profile-img img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 3px solid #38bdf8;
-  margin-bottom: 15px;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.highlight {
-  color: #38bdf8;
-}
-
-.subtitle {
-  color: #94a3b8;
-  margin-bottom: 25px;
-  font-size: 1.1rem;
-}
-
-/* Interactive Demo Button */
-#demoBtn {
-  background-color: #38bdf8;
-  color: #0f172a;
-  font-weight: 600;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-#demoBtn:hover {
-  background-color: #0284c7;
-  color: #ffffff;
-}
-
-#demoBtn:active {
-  transform: scale(0.98);
-}
-
-/* Dynamic Message Styling */
-#welcomeMsg {
-  margin-top: 15px;
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #38bdf8;
-  min-height: 24px;
-}
-
-/* Technical Skills Section */
-.skills-section {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.skills-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.skill-card {
-  background-color: #1e293b;
   padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #334155;
+  position: relative;
+  overflow-x: hidden;
 }
 
-.skill-card h3 {
+/* Background Glowing Effects */
+.blur-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.orb-1 {
+  width: 300px;
+  height: 300px;
+  background: #6366f1;
+  top: 10%;
+  left: 15%;
+}
+
+.orb-2 {
+  width: 250px;
+  height: 250px;
+  background: #ec4899;
+  bottom: 10%;
+  right: 15%;
+}
+
+/* Glassmorphism Card Container */
+.portfolio-card {
+  position: relative;
+  z-index: 1;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 40px 30px;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Profile Picture Styling */
+.avatar-wrapper {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 20px auto;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.3);
+}
+
+.status-badge {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
   color: #38bdf8;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
-.skill-card p {
+.status-badge span {
+  width: 8px;
+  height: 8px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px #22c55e;
+}
+
+/* Typography */
+.name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 6px;
+}
+
+.tagline {
   color: #94a3b8;
   font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 24px;
 }
-/* Dynamic Demo Button Styling */
-#demoBtn {
-  background-color: #38bdf8;
-  color: #0f172a;
-  font-weight: 600;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 6px;
+
+/* Welcome Box */
+.welcome-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 24px;
+}
+
+.greeting {
   font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-#demoBtn:hover {
-  background-color: #0284c7;
-  color: #ffffff;
-}
-
-#demoBtn:active {
-  transform: scale(0.98);
-}
-
-/* Dynamic Welcome Message Styling */
-#welcomeMsg {
-  margin-top: 15px;
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #38bdf8;
-  min-height: 24px;
+  margin-bottom: 8px;
+}
+
+.bio {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+/* Glowing Button Styling */
+.action-area {
+  margin-bottom: 24px;
+}
+
+.glow-btn {
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  color: #ffffff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.glow-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
+}
+
+.glow-btn:active {
+  transform: translateY(0);
+}
+
+.dynamic-msg {
+  margin-top: 14px;
+  font-size: 0.95rem;
+  color: #38bdf8;
+  font-weight: 600;
+  min-height: 20px;
+}
+
+/* Pills Container */
+.pills-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #94a3b8;
 }
