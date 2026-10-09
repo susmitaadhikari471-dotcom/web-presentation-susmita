@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Susmita Adhikari | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Susmita Adhikari | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header Navigation -->
-    <header class="navbar">
-        <div class="logo">Susmita.dev</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Susmita.Ad</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-        <div class="profile-container">
-            
-            <img src="profile.jpg" alt="Susmita Adhikari" class="profile-pic">
-        </div>
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Susmita Adhikari</span> 👋</h1>
-            <p>Computer Engineering Student at Seoul Theological University</p>
-            <button class="btn">Click For Demo Feature</button>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="profile-img">
+      <!-- Profile Picture -->
+      <img src="profile.jpg="Susmita Adhikari">
+    </div>
+    <h1>Hi, I'm <span class="highlight">Susmita Adhikari</span> 👋</h1>
+    <p class="subtitle">Computer Engineering Student at Seoul Theological University</p>
 
-    <!-- Technical Skills Section -->
-    <section class="tech-skill" id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>🌐 Web Dev</h3>
-                <p>HTML5, CSS3, Flexbox & Grid Layouts</p>
-            </div>
-            <div class="skill-card">
-                <h3>🐍 Python</h3>
-                <p>Data Structures, Spyder IDE, Logic Building</p>
-            </div>
-            <div class="skill-card">
-                <h3>🛠️ Tools</h3>
-                <p>VS Code, Git, Interactive Web Tools</p>
-            </div>
-        </div>
-    </section>
+    <!-- Interactive Button & Message Area -->
+    <button id="demoBtn" type="button">Click For Demo Feature</button>
+    <p id="welcomeMsg"></p>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section class="skills-section" id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      
+      <div class="skill-card">
+        <h3>🌐 Web Dev</h3>
+        <p>HTML5, CSS3, Flexbox & Grid Layouts</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>🐍 Python</h3>
+        <p>Data Structures, Spyder IDE, Logic Building</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>🛠️ Tools</h3>
+        <p>VS Code, Git, Interactive Web Tools</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- JavaScript Linking -->
+  <script src="script.js"></script>
 
 </body>
 </html>
